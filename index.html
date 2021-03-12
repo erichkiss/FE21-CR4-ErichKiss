@@ -16,8 +16,9 @@
             <div class="card-header">
               Code Review 04 - Erich Kiss
             </div>
-            <div class="card-body">
-              <h5 class="card-title text-center">Movie Factory</h5>
+            <div class="card-body row">
+              <h5 class="card-title text-center col-6">Movie Factory</h5>
+              <button id="rating_button" type="button" class="btn btn-secondary col-2">Show highest rating!</button>
             </div>
           </div>
     </header>
@@ -30,6 +31,24 @@
                 <!-- this is where the javascript magic happens  -->
             </div>
         </div>
+
+        <div id="ratingsModal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">The movie with the highest rating</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modal_body" class="modal-body">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
     </main>
     
 
@@ -48,9 +67,11 @@
             </div>
           </div>
     </footer>
-    
 
-    <script src="js/myscript.js"></script>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/myscript.js"></script>
+    
 </body>
 </html>

@@ -1,5 +1,7 @@
+//==========
+// Cards output and EventListener for Like button and likes increment
 let movies = JSON.parse(movieDB);
-var outputID = 0;
+var outputID = 0; // to track the different output lines
 
 for (let i of movies) { // in this loop I print all Bootstrap cards
     document.getElementById("viewCards").innerHTML += ` 
@@ -41,10 +43,28 @@ for (let i in movies) { // adding eventListener to all buttons. To distinguish b
 
 };
 
+//==============
+// Ratings logic
+
+var myModal = new bootstrap.Modal(document.getElementById("ratingsModal"));
+
+function showHighestRating () {
+    let index = 0, highestRating = 0;
+    for (o = 0; o < movies.length; o++) {
+        if (highestRating < movies[o].likes) {
+            highestRating = movies[o].likes;
+            index = o;
+        }
+    }
+    // console.log(index + " Index");
+    document.getElementById("modal_body").innerHTML = "The movie with the highest rating with " + movies[index].likes + " likes is " + movies[index].movieName + `<img src="${movies[index].image}" class="card-img" alt="...">`;
+    myModal.show();
+};
+
+document.getElementById("rating_button").addEventListener("click",showHighestRating);
 
 
-
-
+//********************************************************************************* */
 // Vertical Card in Bootstrap
 // <div id="main_div" class="col-lg-4 col-md-6 ${i.Id}">
 //         <div class="card">
