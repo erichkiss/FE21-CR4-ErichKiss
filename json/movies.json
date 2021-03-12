@@ -7,7 +7,7 @@ let movieDB = `
         "year": "1985",
         "description": "Best movie ever",
         "likes": "0",
-        "image": "../img/BTTF.jpg"
+        "image": "./img/BTTF.jpg"
     },
     {
         "Id": "002",
@@ -15,7 +15,7 @@ let movieDB = `
         "year": "1972",
         "description": "Also one of the best movies",
         "likes": "0",
-        "image": "../img/Godfather.jpg"
+        "image": "./img/Godfather.jpg"
     },
     {
         "Id": "003",
@@ -23,7 +23,7 @@ let movieDB = `
         "year": "1994",
         "description": "Incredibly good movie",
         "likes": "0",
-        "image": "../img/Shawshank.jpg"
+        "image": "./img/Shawshank.jpg"
     },
     {
         "Id": "004",
@@ -31,7 +31,7 @@ let movieDB = `
         "year": "2008",
         "description": "Heath Ledger at his best",
         "likes": "0",
-        "image": "../img/DarkKnight.jpg"
+        "image": "./img/DarkKnight.jpg"
     },
     {
         "Id": "005",
@@ -39,7 +39,7 @@ let movieDB = `
         "year": "1994",
         "description": "Bad Mother******",
         "likes": "0",
-        "image": "../img/PulpFiction.jpg"
+        "image": "./img/PulpFiction.jpg"
     },
     {
         "Id": "006",
@@ -47,7 +47,7 @@ let movieDB = `
         "year": "1994",
         "description": "Run, Forrest, run!",
         "likes": "0",
-        "image": "../img/Forrest.jpg"
+        "image": "./img/Forrest.jpg"
     }
 
 ]
