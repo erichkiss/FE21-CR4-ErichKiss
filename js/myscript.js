@@ -51,10 +51,10 @@ var myModal = new bootstrap.Modal(document.getElementById("ratingsModal")); //cr
 function showHighestRating () { // when the ratings button is clicked, I check which movie has the highest rating and I show that movie in a modal
     let index = 0, highestRating = 0;
     
-    for (o = 0; o < movies.length; o++) { // loop through movie ratings
+    for (o = 0; o < movies.length; o++) { // loop through movie ratings 
         if (highestRating < movies[o].likes) {
             highestRating = movies[o].likes; // saving highest rating
-            index = o; // saving the index of the higest rated movie
+            index = o; // saving the index of the higest rated movie - problem: when two or more movies have the same rating, only the first one in the list will be shown
         }
     }
     // console.log(index + " Index");
