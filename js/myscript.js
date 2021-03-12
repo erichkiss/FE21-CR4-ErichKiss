@@ -23,7 +23,7 @@ for (let i of movies) { // in this loop I print all Bootstrap cards
                                                     </div>
                                                     `;
 
-    //as you'll see below, I added 
+    //as you'll see below, I added the i.Id as button id
     
     outputID++; // I'm sure there is a more elegant way to adress the correct output element- but to proceed to the increment logic, I leave here
     // currently the confusion in my head makes it hard to remember the correct methods
