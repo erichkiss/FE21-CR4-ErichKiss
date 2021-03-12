@@ -46,27 +46,27 @@ for (let i in movies) { // adding eventListener to all buttons. To distinguish b
 //==============
 // Ratings logic
 
-var myModal = new bootstrap.Modal(document.getElementById("ratingsModal"));
+var myModal = new bootstrap.Modal(document.getElementById("ratingsModal")); //creating a new modal
 
-function showHighestRating () {
+function showHighestRating () { // when the ratings button is clicked, I check which movie has the highest rating and I show that movie in a modal
     let index = 0, highestRating = 0;
     
-    for (o = 0; o < movies.length; o++) {
+    for (o = 0; o < movies.length; o++) { // loop through movie ratings
         if (highestRating < movies[o].likes) {
-            highestRating = movies[o].likes;
-            index = o;
+            highestRating = movies[o].likes; // saving highest rating
+            index = o; // saving the index of the higest rated movie
         }
     }
     // console.log(index + " Index");
-    if (highestRating==0) {
+    if (highestRating==0) { // in case there was no rating yet
         document.getElementById("modal_body").innerHTML = "No ratings yet";
     } else {
     document.getElementById("modal_body").innerHTML = "The movie with the highest rating with " + movies[index].likes + " likes is " + movies[index].movieName + `<img src="${movies[index].image}" class="card-img" alt="...">`;
     }
-    myModal.show();
+    myModal.show(); // modal output
 };
 
-document.getElementById("rating_button").addEventListener("click",showHighestRating);
+document.getElementById("rating_button").addEventListener("click",showHighestRating); // rating button eventListener
 
 
 //********************************************************************************* */
