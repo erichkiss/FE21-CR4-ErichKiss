@@ -1,0 +1,54 @@
+let movieDB = `
+
+  [
+    {
+        "Id": "001",
+        "movieName": "Back to the Future",
+        "year": "1985",
+        "description": "Best movie ever",
+        "likes": "0",
+        "image": "../img/BTTF.jpg"
+    },
+    {
+        "Id": "002",
+        "movieName": "The Godfather",
+        "year": "1972",
+        "description": "Also one of the best movies",
+        "likes": "0",
+        "image": "../img/Godfather.jpg"
+    },
+    {
+        "Id": "003",
+        "movieName": "The Shawshank Redemption",
+        "year": "1994",
+        "description": "Incredibly good movie",
+        "likes": "0",
+        "image": "../img/Shawshank.jpg"
+    },
+    {
+        "Id": "004",
+        "movieName": "The Dark Knight",
+        "year": "2008",
+        "description": "Heath Ledger at his best",
+        "likes": "0",
+        "image": "../img/DarkKnight.jpg"
+    },
+    {
+        "Id": "005",
+        "movieName": "Pulp Fiction",
+        "year": "1994",
+        "description": "Bad Mother******",
+        "likes": "0",
+        "image": "../img/PulpFiction.jpg"
+    },
+    {
+        "Id": "006",
+        "movieName": "Forrest Gump",
+        "year": "1994",
+        "description": "Run, Forrest, run!",
+        "likes": "0",
+        "image": "../img/Forrest.jpg"
+    }
+
+]
+`
