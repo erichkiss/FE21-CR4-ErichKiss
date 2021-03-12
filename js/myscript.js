@@ -50,6 +50,7 @@ var myModal = new bootstrap.Modal(document.getElementById("ratingsModal"));
 
 function showHighestRating () {
     let index = 0, highestRating = 0;
+    
     for (o = 0; o < movies.length; o++) {
         if (highestRating < movies[o].likes) {
             highestRating = movies[o].likes;
@@ -57,7 +58,11 @@ function showHighestRating () {
         }
     }
     // console.log(index + " Index");
+    if (highestRating==0) {
+        document.getElementById("modal_body").innerHTML = "No ratings yet";
+    } else {
     document.getElementById("modal_body").innerHTML = "The movie with the highest rating with " + movies[index].likes + " likes is " + movies[index].movieName + `<img src="${movies[index].image}" class="card-img" alt="...">`;
+    }
     myModal.show();
 };
 
