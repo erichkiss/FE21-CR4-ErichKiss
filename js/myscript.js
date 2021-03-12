@@ -46,55 +46,6 @@ for (let i in movies) {
 
 
 
-// let outputfield = 0;
-
-// for (let i of movies) {
-//     document.getElementById(i.Id).addEventListener("click", function(){incrementLikes(outputfield)});
-//     outputfield++;
-// };
-
-// function incrementLikes (x) {
-//     console.log(x);
-//     movies[x].likes++;
-//     // console.log(movies[x].likes);
-//     // document.getElementById(x).innerHTML = `${movies[x].likes}`;
-// };
-
-// var buttons = document.getElementsByClassName("like_button");
-// // console.log(buttons);
-
-// function incrementLikes() {
-//     console.log("hurra");
-// };
-
-// for (let j in buttons) {
-//     console.log(buttons[j]);
-//     buttons[j].addEventListener("click",function(){incrementLikes(j)});
-// };
-
-
-
-// buttons.addEventListener("click", incrementLikes);
-
-
-
-//loop doesnt work
-
-// var buttons = document.getElementsByClassName("like_button");
-
-// function incrementLikes() {
-//     //     movies[0].likes++;
-// };
-
-// for (let j in buttons) {
-//     console.log(buttons[j]);
-//     buttons[j].addEventListener("click",incrementLikes);
-// };
-
-
-
-
-
 
 // Vertical Card 
 // <div id="main_div" class="col-lg-4 col-md-6 ${i.Id}">
